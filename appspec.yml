@@ -4,3 +4,12 @@ os: linux
 files:
   - source: /
     destination: /var/www/hello
+hooks:
+  BeforeInstall:
+    - location: ./before.sh
+      timeout: 120
+      runas: root
+  AfterInstall:
+    - location: ./after.sh
+      timeout: 120
+      runas: root
