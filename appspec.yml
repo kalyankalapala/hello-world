@@ -1,5 +1,6 @@
+### appspec.yml ####
 version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/hello-world
+    destination: /var/www/hello
